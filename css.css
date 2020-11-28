@@ -1,0 +1,49 @@
+body {
+	background-color: #26C999;
+	color: #fff;
+}
+div.shoptitle {	color: #ffda2f; }
+input.shoptitle {
+	background-color: #26C999;
+	color: #ffda2f;
+}
+input.shoptitle::placeholder { color: #ffda2f; }
+input.shoptitle::-webkit-input-placeholder { color: #ffda2f; }
+input.shoptitle::-ms-input-placeholder { color: #ffda2f; }
+input.shoptitle:-ms-input-placeholder { color: #ffda2f; }
+div.addr { color: #fff; }
+input.addr {
+	background-color: #26C999;
+	color: #fff;
+}
+input.addr::placeholder { color: #fff; }
+input.addr::-webkit-input-placeholder { color: #fff; }
+input.addr::-ms-input-placeholder { color: #fff; }
+input.addr:-ms-input-placeholder { color: #fff; }
+::placeholder {
+	font-style: italic;
+}
+::-ms-input-placeholder {
+	font-style: italic;
+}
+:-ms-input-placeholder {
+	font-style: italic;
+}
+::-webkit-input-placeholder {
+	font-style: italic;
+}
+input[type=text] {
+	width: 95%;
+}
+input[type=button], input[type=submit] {
+	background-color: #13B187;
+	color: #ffda2f;
+	width: 150px;
+	height: 50px;
+}
+div#guide {
+	margin: 20px 0px;
+}
+div#form {
+	line-height: 2;
+}

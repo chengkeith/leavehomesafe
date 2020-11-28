@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta property="og:title" content="安心出行二維碼產生器"/>
+<meta property="og:type" content="website"/>
+<meta property="og:description" content="目的為不願在政府強制登記情況下列印自製的二維碼，適合餐廳、店舖老闆使用"/>
+<meta property="og:image" content="icon.png" />	
+<!-- Add to homescreen for Chrome on Android -->
+<meta name="mobile-web-app-capable" content="yes" />
+<link rel="icon" sizes="96x96" href="icon.png" />
+<meta name="theme-color" content="#26C999" />
+<!-- Add to homescreen for Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<title>安心出行二維碼產生器</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js" integrity="sha512-Qlv6VSKh1gDKGoJbnyA5RMXYcvnpIqhO++MhIM2fStMcGT9i2T//tSwYFlcyoRRDcDZ+TYHpH8azBBCyhpSeqw==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.1.1/jspdf.umd.min.js" integrity="sha512-/Am09zlYshHgRizY3RkConGj4BsYIdb8mS7r5XAXw0rTiLgGSHzpUHTQBhinWR32C/KzLr749J1xuORzT2JnRA==" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-base64@3.6.0/base64.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js" integrity="sha512-szJ5FSo9hEmXXe7b5AUVtn/WnL8a5VofnFeYC2i2z03uS2LhAch7ewNLbl5flsEmTTimMN0enBZg/3sQ+YOSzQ==" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/qrcode@1.4.4/build/qrcode.min.js" integrity="sha256-DhdpoP64xch/Frz8CiBQE12en55NX+RhlPGRg6KWm5s=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js.js?"></script>
+<link rel="stylesheet" href="./css.css?" />
+</head>
+<body>
+<h1>安心出行二維碼產生器</h1>
+<div id=guide>
+此乃安心出行二維碼產生器，目的讓不願免費幫政府宣傳安心出行應用程式商戶，自行製作、設計並列印自己的二維碼，適合餐廳、店舖老闆使用
+<br /><br />
+使用方法︰輸入名稱及地址，然後按製作。
+<br /><br />
+所有資料可填可不填，全自動自助，不用查家宅，不用查商業登記（BR），沒有資料離開你的電腦／裝置
+</div>
+<div id=form>
+<div class=shoptitle>
+<input type=text id=nameChi name=nameChi class=shoptitle placeholder="中文名稱" /><br />
+<input type=text id=nameEng name=nameEng class=shoptitle placeholder="英文名稱" /><br />
+</div>
+<div class=shopaddr>
+<input type=text id=addr1 name=addr1 class=addr placeholder="地址第一行" /><br />
+<input type=text id=addr2 name=addr2 class=addr placeholder="地址第二行" /><br />
+</div>
+<div><br />
+<input type=button id=submitButton value="製作 (安心出行民間版)" />
+<input type=button id=qrcodeButton value="製作 (只有二維碼)" />
+</div>
+</div>
+</body>
+</html>
